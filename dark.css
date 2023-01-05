@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    background-color: black;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+
+    font-family: 'Rubik', sans-serif;
+    color: #FFF;
+}
+
+strong {
+    color: #FF6060;
+}
+
+.calc_wrap {
+    width: 320px;
+    height: 568px;
+
+    background: #00223A;
+    box-shadow: 0 0 8px 2px #888;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 225px 368px;
+}
+
+.output_wrap {
+    background-color: #00223A;
+    padding: 24px;
+
+    display: grid;
+    grid-template-rows: repeat(2, 20px);
+    gap: 32px;
+    justify-items: end;
+    align-self: flex-end;
+}
+
+#do {
+    color: #FFF;
+    background-color: #00223A;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.82),
+    inset 0 -3px 3px 0 rgba(216, 214, 214, 0.636);
+    border: 0;
+    border-radius: 5px;
+    height: 32px;
+    width: 100%;
+    text-align: end;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+
+#res {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+
+.btns_wrap {
+    padding: 5px 20px 30px 20px;
+    background-color: #001B2F;
+    border-radius: 20px 20px 0px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    cursor: none;
+}
+#btn_2, #btn_3, #btn_4, #btn_8, #btn_12, #btn_16, #btn_19, #btn_20 { color: #00B0D7; }
+.btn 
+{
+    color: #FFF;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 24.4828px;
+    line-height: 29px;
+
+    display: block;
+    margin: 10px 0;
+    /* padding: 20px; */
+    height: 100%;
+    width: 100%;
+
+    border: 0;
+    border-radius: 15px;
+    background-color: #001B2F;
+    cursor: none;
+}
+
+.btn:hover {
+    background-color: #012c4b;
+}
+
+.btn:active {
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.22), 
+    inset 0 -3px 3px 0 rgba(216, 214, 214, 0.636);
+}
+
+.theme_btn 
+{
+    cursor: help;
+    background-color: #001B2F;
+    display: inline-block;
+    padding: 35px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255);
+    
+}

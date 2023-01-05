@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./light.css" id="theme_link">
+    <!-- <link rel="stylesheet" href="./dark.css"> -->
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc_wrap">
+        <div class="output_wrap">
+            <!-- <label id="do" for="html">50 <strong>+</strong> 50</label> -->
+            <input type="text" class="form-control" id="do">
+            <span id="res">Result</span>
+        </div>
+        <div class="btns_wrap">
+            <!-- <div class="btn btn_1"><strong>C</strong></div> -->
+            <button onclick="clear()" class="btn" id="btn_1"> <strong>C</strong> </button>
+
+            <!-- <div class="btn btn_2">%</div> -->
+            <button onclick="proc()" class="btn" id="btn_2"> % </button>
+
+            <!-- <div class="btn btn_3">⌫</div> -->
+            <button onclick="del()" class="btn" id="btn_3"> <img src="./svg/backspace.svg" alt="backspace"></button>
+            <!-- ⌫ -->
+
+            <!-- <div class="btn btn_4">÷</div> -->
+            <button onclick="div()" class="btn" id="btn_4"> ÷ </button>
+
+            <!-- <div class="btn btn_5">7</div> -->
+            <button onclick="7()" class="btn" id="btn_5"> 7 </button>
+
+            <!-- <div class="btn btn_6">8</div> -->
+            <button onclick="8()" class="btn" id="btn_6"> 8 </button>
+
+            <!-- <div class="btn btn_7">9</div> -->
+            <button onclick="9()" class="btn" id="btn_7"> 9 </button>
+
+            <!-- <div class="btn btn_8">×</div> -->
+            <button onclick="mul()" class="btn" id="btn_8"> × </button>
+
+            <!-- <div class="btn btn_9">4</div> -->
+            <button onclick="4()" class="btn" id="btn_9"> 4 </button>
+
+            <!-- <div class="btn btn_10">5</div> -->
+            <button onclick="5()" class="btn" id="btn_10"> 5 </button>
+
+            <!-- <div class="btn btn_11">6</div> -->
+            <button onclick="6()" class="btn" id="btn_11"> 6 </button>
+
+            <!-- <div class="btn btn_12">-</div> -->
+            <button onclick="sub()" class="btn" id="btn_12"> - </button>
+
+            <!-- <div class="btn btn_13">1</div> -->
+            <button onclick="1()" class="btn" id="btn_13"> 1 </button>
+
+            <!-- <div class="btn btn_14">2</div> -->
+            <button onclick="2()" class="btn" id="btn_14"> 2 </button>
+
+            <!-- <div class="btn btn_15">3</div> -->
+            <button onclick="3()" class="btn" id="btn_15"> 3 </button>
+
+            <button onclick="add()" class="btn" id="btn_16"> + </button>
+
+            <!-- <div class="btn btn_17">.</div> -->
+            <button onclick="dot()" class="btn" id="btn_17"> . </button>
+
+            <!-- <div class="btn btn_18">0</div> -->
+            <button onclick="0()" class="btn" id="btn_18"> 0 </button>
+
+            <!-- <div class="btn btn_19">R</div> -->
+            <button onclick="r()" class="btn" id="btn_19"> <img src="./svg/r.svg" alt="r"> </button>
+
+            <!-- <div class="btn btn_20">=</div> -->
+            <button onclick="eq()" class="btn" id="btn_20"> <strong>=</strong> </button>
+        </div>
+    </div>
+
+    <div class="theme_btn" id="theme_btn"><b>NOX</b></div>
+    <script type="text/javascript" src="./themes.js"></script>
+</body>
+</html>
+
+
+
